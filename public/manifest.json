@@ -1,0 +1,11 @@
+{
+    "short_name": "Centum.JS Docs",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "16x16",
+            "type": "image/x-icon"
+        }
+    ]
+}
