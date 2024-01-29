@@ -21,5 +21,5 @@ https://centum-webserver.onrender.com/methods
 ~~~  
 
 ### Demo URL  
-  
-*https://6593fac6589f7300867fcaba--centum-webserver.netlify.app*
+
+*https://65b778ac213eee161880d18a--centum-docs.netlify.app*
