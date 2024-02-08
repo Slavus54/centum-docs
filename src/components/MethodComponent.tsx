@@ -21,10 +21,10 @@ const MethodComponent = ({params}: ComponentPropsType) => {
             {method !== null &&
                 <>
                     <h1>.{method.title}()</h1> 
-                    <h3 class='text pale'>{method.description} ({method.lines}*)</h3>
+                    <h3 class='text pale'>{method.description} ({method.lines} lines)</h3>
 
                     <h2>#Arguments</h2>
-                    <div class='items half'>
+                    <div class='items small'>
                         {method.values.map(el => <div class='item label'>{el}</div>)}
                     </div>
 
@@ -37,8 +37,6 @@ const MethodComponent = ({params}: ComponentPropsType) => {
                         <RouterNavigator title='Back' url='/docs' />
                         <RouterNavigator title='Try' url='/codebox' />
                     </div>   
-
-                    <p class='text detail pale'>* Length of code</p>
                 </>
             }
         </>

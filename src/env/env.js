@@ -9,16 +9,7 @@ export const routes = [
     }
 ]
 
-export const features = [
-    {
-        headline: 'Syntax',
-        text: 'Developed on ES2023, support NodeJS 18.4.0 and higher'
-    },
-    {
-        headline: 'Architecture',
-        text: 'OOP classes on JS, SOLID principles and Design Patterns'
-    }
-]
+export const topics = ['Array', 'Numbers', 'Math', 'Search', 'Sort', 'Convert', 'Validation', 'Geo']
 
 export const argument_types = [
     {

@@ -1,7 +1,6 @@
 //@ts-ignore
 import Centum from 'centum.js'
-import Feature from './Feature'
-import {features, NPM_ICON, NPM_URL} from '../env/env'
+import {NPM_ICON, NPM_URL, topics} from '../env/env'
 
 const Main = () => {
 
@@ -15,12 +14,24 @@ const Main = () => {
         <>
             <h1>Centum.JS</h1>
             <h3 class='pale'>Little polyfunctional library on JS for using in building webapps and just coding</h3>
-            <img onClick={onView} src={NPM_ICON} alt='npm icon' />
-           
-            <h1>Features</h1>
+            <img onClick={onView} src={NPM_ICON} alt='npm icon' />       
+
+            <h2>Get Started</h2>
+
             <div class='items half'>
-                {features.map(el => <Feature headline={el.headline} text={el.text} />)}
-            </div>            
+                <div class='item'>import Centum from 'centum.js'</div>
+
+                <div class='item'>const centum = new Centum()</div>
+            </div>
+            
+            <h2>Topics</h2>
+            <div class='items half'>
+                {topics.map(el => 
+                    <div class='item card'>
+                        {el}
+                    </div>    
+                )}
+            </div>
         </>
     )
 }

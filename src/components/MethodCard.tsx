@@ -5,8 +5,8 @@ const MethodCard = ({id, title, lines}: MethodCardProps) => {
     const [loc, setLoc] = useLocation()
 
     return (
-        <div onClick={() => setLoc(`/method/${id}`)} class='item card'>
-            {title}
+        <div onClick={() => setLoc(`/method/${id}`)} class='item panel'>
+            <b>{title}</b>
             <p>{lines} lines</p>
         </div>
     )
