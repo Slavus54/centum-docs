@@ -20,6 +20,6 @@ Get collection of Centum.JS methods:
 https://centum-webserver.onrender.com/methods  
 ~~~  
 
-### Demo URL  
+### URL  
 
-*https://65b778ac213eee161880d18a--centum-docs.netlify.app*
+*https://65c5057a5cdd612c5ee571a7--centumjs-docs.netlify.app*
