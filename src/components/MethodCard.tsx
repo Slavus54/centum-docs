@@ -6,7 +6,7 @@ const MethodCard = ({id, title, lines}: MethodCardProps) => {
 
     return (
         <div onClick={() => setLoc(`/method/${id}`)} class='item panel'>
-            <b>{title}</b>
+            <b>.{title}()</b>
             <p>{lines} lines</p>
         </div>
     )

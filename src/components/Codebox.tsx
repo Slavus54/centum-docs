@@ -1,5 +1,4 @@
 import {useState, useMemo} from 'preact/hooks'
-//@ts-ignore
 import Centum from 'centum.js'
 import RouterNavigator from './RouterNavigtor'
 import {gain} from '../store/store'
@@ -70,7 +69,7 @@ const Codebox = () => {
         <>
            {data !== null &&
                 <>
-                    <h2>Create Data for .{data.currentMethod}()</h2>
+                    <h2>Enter arguments for .{data.currentMethod}()</h2>
                     <h3 class='pale'>Choose {argTitle}'s argument type</h3>
                     
                     <div class='items small'>
@@ -81,13 +80,13 @@ const Codebox = () => {
                                         
                     <div class='items small'>
                         <button onClick={() => onArgument(false)}>Reset</button>
-                        <button onClick={() => onArgument(true)}>+</button>
+                        <button onClick={() => onArgument(true)}>{values.length + 1 < data.values.length ? '+' : 'Look'}</button>
                     </div>
                   
                    
                     <h2>Result - {result}</h2> 
 
-                    <RouterNavigator title='Back' url='/docs' />
+                    <RouterNavigator title='To Methods' url='/docs' />
                 </>
            }
         </>

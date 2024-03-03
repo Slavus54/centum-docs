@@ -60,22 +60,16 @@ button {
 	background-color: #F0DB4F;
 	max-height: 3rem;
 	font-size: 1rem;
-	font-weight: 400;
-	padding: 1.5rem 1.5rem;
-	margin: 1rem 0rem;
+	font-weight: 500;
+	padding: 1.25rem;
+	margin: 1rem;
 	border-radius: 0.25rem;
 	letter-spacing: 0.1rem;
-	transition: 0.1s ease-in-out;
   	overflow: hidden;
 	transition: 0.1s ease-in-out;
 	user-select: none;
 	border: none;
 	cursor: pointer;
-}
-
-button:hover {
-	box-shadow: 0px 0px 3px 0px #000000;
-	background-color: inherit;
 }
 
 input[type=text] {
@@ -150,8 +144,7 @@ input[type=text] {
 	position: relative;
 	align-items: center;
 	justify-content: space-around;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	width: 100%;
 }
 
@@ -185,13 +178,13 @@ input[type=text] {
 .label {
 	font-size: 1rem;
 	font-weight: 300;
-	width: min(50%, 7rem);
+	width: min(50%, 8rem);
 	height: min(100%, 3rem);
 	color:#181C1F;
 	box-shadow: 0px 0px 1px 0px #8a8a8a;
 	border-radius: 0.25rem;
-	padding: 0.5rem 0.5rem;
-	margin: 0.5rem 0.5rem;
+	padding: 1rem;
+	margin: 1rem;
 }
 
 .card {
@@ -228,6 +221,10 @@ input[type=text] {
 	margin: 0.5rem 0.5rem;
 }
 
+.panel:active {
+	background-color: #F0DB4F;
+}
+
 .active, .label:hover {
 	box-shadow: 0px 0px 3px 0px#323330;
 	transition: 0.1s ease-in-out;
@@ -244,6 +241,10 @@ input[type=text] {
 
 .loader {
 	margin: 5rem 0rem;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .pale {
@@ -264,7 +265,14 @@ input[type=text] {
 	display: flex;
 	justify-content: center;
 	text-align: left;
-	width: 80%;
+	width: 40%;
+}
+
+.example {
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
 }
 
 @media (min-width: 500px) and (max-width: 1300px) {

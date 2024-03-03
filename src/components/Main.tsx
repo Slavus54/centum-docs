@@ -1,4 +1,3 @@
-//@ts-ignore
 import Centum from 'centum.js'
 import {NPM_ICON, NPM_URL, topics} from '../env/env'
 
@@ -12,8 +11,11 @@ const Main = () => {
 
     return (
         <>
-            <h1>Centum.JS</h1>
-            <h3 class='pale'>Little polyfunctional library on JS for using in building webapps and just coding</h3>
+            <h1>Centum.js</h1>
+            <h3 class='pale'>
+                Little polyfunctional library on JavaScript for better building web apps. <br />
+                There are more than <b>36/100</b> methods <span class='italic'>(lat. "centum" - 1 hundred)</span>
+            </h3>
             <img onClick={onView} src={NPM_ICON} alt='npm icon' />       
 
             <h2>Get Started</h2>

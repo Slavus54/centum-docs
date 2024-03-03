@@ -21,10 +21,10 @@ const MethodComponent = ({params}: ComponentPropsType) => {
             {method !== null &&
                 <>
                     <h1>.{method.title}()</h1> 
-                    <h3 class='text pale'>{method.description} ({method.lines} lines)</h3>
+                    <h3 class='text pale'>{method.description}</h3>
 
                     <h2>#Arguments</h2>
-                    <div class='items small'>
+                    <div class='items half'>
                         {method.values.map(el => <div class='item label'>{el}</div>)}
                     </div>
 
